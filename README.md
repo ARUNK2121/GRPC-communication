@@ -1,4 +1,4 @@
-3 # GRPC communication
+# GRPC communication
 
 this is just a simple project to understand the basics of grpc communication in microservices
 
