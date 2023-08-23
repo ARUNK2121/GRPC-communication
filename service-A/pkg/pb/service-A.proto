@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package service_a;
+
+option go_package = "./pkg/pb";
+
+service A_Service {
+    rpc FunctionA(SampleRequest) returns (SampleResponse) {}
+    rpc FunctionB_TO_A(SampleRequest2) returns (SampleResponse) {}
+}
+
+message SampleRequest{
+    int64 id =1;
+    string name =2;
+}
+
+message SampleRequest2{
+    string place =1;
+}
+
+message SampleResponse{
+    string message =1;
+}
